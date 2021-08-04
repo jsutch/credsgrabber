@@ -2,7 +2,7 @@
 
 There are two examples here for different target types: one uses an HTTP target which can be run on an arbitrary port. The other relies on the attacker having access to a DNS server and the logs. You could also use tcpdump/tshark to sniff DNS Lookup Packets going out, but there are other tutorials for that.
 
-## CredsGrabber
+## CredsGrabber - HTTP exfiltration
 
 Sample code to search through well known creds repositories for osx/linux (.ssh/.aws/.azure), zip up the contents and post them to an ephemeral web listener
 
